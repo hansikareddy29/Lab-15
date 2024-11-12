@@ -1,11 +1,7 @@
-
-set terminal pdf
-set output 'four2.pdf'
-set title "Age vs Blood Pressure"
-set xlabel "Age"
-set ylabel "Blood Pressure"
-set xrange [30:100]
-set xtics 50
-set grid
-set style data points
-plot 'data.dat' using 4:xtic(1) 
+set terminal png
+set output 'que4_b.png'  
+set xlabel "Age"  
+set datafile separator ','
+set ylabel "Blood Pressure"  
+set title "Age vs Blood Pressure"  
+plot "data_b.dat" using 1:4 with points title "Age vs BP"
